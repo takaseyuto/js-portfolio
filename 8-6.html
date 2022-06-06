@@ -62,7 +62,7 @@
           const sprite = new THREE.Sprite(material);
           // ランダムな座標に配置
           sprite.position.x = 1.5 * (Math.random()-0.5);
-          sprite.position.y = 1 * (Math.random()+0.7);
+          sprite.position.y = 1 * (Math.random()+0.8);
           sprite.position.z = 1.5 * (Math.random()-0.5);
           // スケールを調整
           sprite.scale.set(0.1, 0.1, 0.1);
@@ -70,7 +70,7 @@
           scene.add(sprite);
         }
         // 幹を作成
-        var boxgeometry = new THREE.BoxGeometry(0.2, 2, 0.2);
+        var boxgeometry = new THREE.BoxGeometry(0.2, 1.2, 0.2);
         var boxmaterial = new THREE.MeshPhongMaterial({ color: 0x8b4513 });
         var box = new THREE.Mesh(boxgeometry, boxmaterial);
         box.castShadow = true;
