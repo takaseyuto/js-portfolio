@@ -58,11 +58,11 @@
         const material = new THREE.SpriteMaterial({ map: texture,});
 
         // hanabiraを作成
-        for (let i = 0; i < 200; i++) {
+        for (let i = 0; i < 300; i++) {
           const sprite = new THREE.Sprite(material);
           // ランダムな座標に配置
           sprite.position.x = 1.5 * (Math.random()-0.5);
-          sprite.position.y = 1 * (Math.random()+0.2);
+          sprite.position.y = 1 * (Math.random()+0.7);
           sprite.position.z = 1.5 * (Math.random()-0.5);
           // スケールを調整
           sprite.scale.set(0.1, 0.1, 0.1);
