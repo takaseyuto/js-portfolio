@@ -74,7 +74,7 @@
         var boxmaterial = new THREE.MeshPhongMaterial({ color: 0x8b4513 });
         var box = new THREE.Mesh(boxgeometry, boxmaterial);
         box.castShadow = true;
-        box.position.set(0,0.5,0); //位置を指定
+        box.position.set(0,0,0); //位置を指定
         scene.add(box);   // シーンに追加
         update();
 
