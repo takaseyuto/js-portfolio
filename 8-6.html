@@ -69,7 +69,13 @@
             
           scene.add(sprite);
         }
-        
+        // 箱を作成
+        var boxgeometry = new THREE.BoxGeometry(1, 7, 1);
+        var boxmaterial = new THREE.MeshPhongMaterial({ color: 0x7fffd4 });
+        var box = new THREE.Mesh(boxgeometry, boxmaterial);
+        box.castShadow = true;
+        box.position.set(1,0,0); //位置を指定
+        scene.add(box);   // シーンに追加
         update();
 
         // 毎フレーム時に実行されるループイベントです
